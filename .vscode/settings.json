@@ -29,4 +29,7 @@
     "name": "C/C++ Launch (LLDB)",
     "miDebuggerPath": "/usr/bin/lldb"
   },
+  "cmake.environment": {
+    "CXX": "/usr/bin/clang++-16 -fstandalone-debug -g"
+  },
 }
