@@ -2,7 +2,8 @@
 FROM mcr.microsoft.com/devcontainers/cpp:debian
 
 ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
-# ENV CXX='/usr/bin/clang++-16 -fstandalone-debug -g'
+# keep CXX here so google test works via the command line
+ENV CXX='/usr/bin/clang++-16 -fstandalone-debug -g'
 
 # Optionally install the cmake for vcpkg
 COPY ./reinstall-cmake.sh /tmp/
