@@ -24,7 +24,8 @@ int main (int argc, char** argv) {
 // Each unit test for a given function is added below
 TEST (SampleClassTest, factorial) {
   SampleClass cSampleClass;
-
+  std::string test = "HELLO";
+  std::cerr << test;
   EXPECT_EQ (1, cSampleClass.factorial (0));
   EXPECT_EQ (1, cSampleClass.factorial (1));
   EXPECT_EQ (2, cSampleClass.factorial (2));
