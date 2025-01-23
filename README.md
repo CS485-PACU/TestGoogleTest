@@ -45,11 +45,11 @@
 5. Run unit tests from the command line:
    * At the command line:
    ```
-   export CXX=`which clang++-16`
-   echo $CXX
-   cmake -S . -B ./build
-   cmake --build build --target clean
-   cmake --build build
+   export CXX=`which clang++-16`;
+   echo $CXX;
+   cmake -S . -B ./build;
+   cmake --build build --target clean;
+   cmake --build build;
    ```
    * If you want to enable the debugger for the unit tests use:
    ```
