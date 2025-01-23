@@ -55,3 +55,7 @@
    ```
    export CXX=`which clang++-16 -fstandalone-debug -g`
    ```
+   * To run the test cases:
+   ```
+   build/test/TestsToRun
+   ```
