@@ -41,3 +41,17 @@
     * In the lower left of the Explorer window you will see Codespaces: and the name of your running codespace which is two words. At the far right you will see a triangle pointing right. Click that icon which will run the unit tests in SampleClassTests.cpp which will unit test the factorial program in class SampleClass.
 
     * A GoogleTest should run that tests a function called factorial that is a member of a class called SampleClass. You should see the function factorial tested and passed in green text.
+  
+5. Run unit tests from the command line:
+   * At the command line:
+   ```
+   export CXX=`which clang++-16`
+   echo $CXX
+   cmake -S . -B ./build
+   cmake --build build --target clean
+   cmake --build build
+   ```
+   * If you want to enable the debugger for the unit tests use:
+   ```
+   export CXX=`which clang++-16 -fstandalone-debug -g`
+   ```
